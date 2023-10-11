@@ -14,12 +14,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(FragmentHome())
 
-        binding.bottomNavigationView.setOnItemReselectedListener {
+        binding.bottomNavigationView.setOnItemSelectedListener {
 
             when(it.itemId){
                 R.id.home -> replaceFragment(FragmentHome())
                 R.id.materi -> replaceFragment(FragmentMenuMateri())
                 R.id.chat -> replaceFragment(FragmentChat())
+                R.id.qr_code -> replaceFragment(FragmentQrCode())
+                R.id.tugas -> replaceFragment(FragmentTugas())
 
                 else ->{
 

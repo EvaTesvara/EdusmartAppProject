@@ -14,6 +14,18 @@
         android:title="Materi"
         android:icon="@drawable/baseline_insert_drive_file_24"/>
     <item
+        android:id="@+id/qr_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Kode QR"
+        android:icon="@drawable/baseline_qr_code_24"/>
+    <item
+        android:id="@+id/tugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Tugas"
+        android:icon="@drawable/baseline_assignment_24"/>
+    <item
         android:id="@+id/chat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

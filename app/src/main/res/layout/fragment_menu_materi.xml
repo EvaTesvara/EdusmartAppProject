@@ -27,7 +27,7 @@
         android:layout_marginTop="70dp"
         android:fontFamily="sans-serif-condensed"
         android:text="Materi"
-        android:textColor="@color/white"
+        android:textColor="#104E62"
         android:textSize="25dp"
         android:textStyle="bold"/>
 
@@ -48,7 +48,7 @@
                 android:layout_width="370dp"
                 android:layout_height="180dp"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#D39191"
+                app:cardBackgroundColor="#D1D0E2"
                 app:cardCornerRadius="20dp">
 
                 <TextView
@@ -58,41 +58,42 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Senin"
-                    android:textColor="@color/white"
+                    android:textColor="#104E62"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:id="@+id/"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="B.Indonesia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="B.Inggris"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="Kimia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari selasa-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="#D1D0E2"
                 app:cardCornerRadius="20dp"
                 android:layout_width="370dp"
                 android:layout_height="180dp"
@@ -105,41 +106,41 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Selasa"
-                    android:textColor="@color/white"
+                    android:textColor="#104E62"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Indonesia"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Matematika"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Inggris"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Fisika"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="@color/white"
-                    android:text="Kimia"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Biologi"
+                    android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari Rabu-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="#D1D0E2"
                 app:cardCornerRadius="20dp"
                 android:layout_width="370dp"
                 android:layout_height="180dp"
@@ -152,41 +153,50 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Rabu"
-                    android:textColor="@color/white"
+                    android:textColor="#104E62"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Indonesia"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="B.inggris"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Inggris"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Matematika"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="Kimia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="140dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="80dp"
+                    android:backgroundTint="#53B2D0"
+                    android:text="B.indonesia"
+                    android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari kamis-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="#D1D0E2"
                 app:cardCornerRadius="20dp"
                 android:layout_width="370dp"
                 android:layout_height="180dp"
@@ -199,41 +209,41 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Kamis"
-                    android:textColor="@color/white"
+                    android:textColor="#104E62"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Indonesia"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Biologi"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
-                    android:text="B.Inggris"
-                    android:textColor="@color/black" />
+                    android:backgroundTint="#53B2D0"
+                    android:text="Fisika"
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="Kimia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari Jumat-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="@color/black"
+                app:cardBackgroundColor="#D1D0E2"
                 app:cardCornerRadius="20dp"
                 android:layout_width="370dp"
                 android:layout_height="180dp"
@@ -246,36 +256,36 @@
                     android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Jumat"
-                    android:textColor="@color/white"
+                    android:textColor="#104E62"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="B.Indonesia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="B.Inggris"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
 
                 <Button
-                    android:layout_width="130dp"
+                    android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#53B2D0"
                     android:text="Kimia"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>

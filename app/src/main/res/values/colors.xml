@@ -2,4 +2,5 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="ungu_pastel_edusmart">#D1D0E2</color>
 </resources>
