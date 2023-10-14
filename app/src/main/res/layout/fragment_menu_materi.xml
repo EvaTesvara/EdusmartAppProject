@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentMenuMateri">
+    tools:context=".FragmentMenuMateri"
+    android:id="@+id/FragmentMenuMateri">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -63,13 +64,13 @@
                     android:textStyle="bold" />
 
                 <Button
-                    android:id="@+id/btn_seninindo"
+                    android:id="@+id/seninindo"
                     android:layout_width="140dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
                     android:backgroundTint="#53B2D0"
-                    android:text="B.Indonesia"
+                    android:text="Fisika"
                     android:textColor="@color/white" />
 
                 <Button

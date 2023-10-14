@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentBabMateri">
+    tools:context=".FragmentBabMateriInggris"
+    android:id="@+id/FragmentBabMateriInggris">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -69,9 +70,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="17dp"
         android:fontFamily="@font/just_another_hand"
-        android:text="B. Inggriss"
+        android:text="B. Inggris"
         android:textColor="@color/orange_wortel_edusmart"
         android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,13 +82,18 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:layout_marginStart="28dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        >
 
-        <LinearLayout
+
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
