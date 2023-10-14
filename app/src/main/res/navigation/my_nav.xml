@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/fragmentMenuMateri"
+        android:name="com.example.edusmart.FragmentMenuMateri"
+        android:label="fragment_menu_materi"
+        tools:layout="@layout/fragment_menu_materi" >
+        <action
+            android:id="@+id/action_fragmentMenuMateri_to_fragmentBabMateri"
+            app:destination="@id/fragmentBabMateri" />
+        <action
+            android:id="@+id/action_fragmentMenuMateri_to_fragmentBabMateriInggris"
+            app:destination="@id/fragmentBabMateriInggris" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBabMateri"
+        android:name="com.example.edusmart.FragmentBabMateri"
+        android:label="fragment_bab_materi"
+        tools:layout="@layout/fragment_bab_materi" >
+        <action
+            android:id="@+id/action_fragmentBabMateri_to_fragmentMenuMateri"
+            app:destination="@id/fragmentMenuMateri" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBabMateriInggris"
+        android:name="com.example.edusmart.FragmentBabMateriInggris"
+        android:label="FragmentBabMateriInggris" >
+        <action
+            android:id="@+id/action_fragmentBabMateriInggris_to_fragmentMenuMateri"
+            app:destination="@id/fragmentMenuMateri" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.edusmart.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentMenuMateri2"
+            app:destination="@id/fragmentMenuMateri" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.edusmart.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+</navigation>

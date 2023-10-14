@@ -13,6 +13,8 @@ class FragmentMenuMateri : Fragment() {
     private lateinit var btn_seninindo:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
     }
 
     override fun onCreateView(
