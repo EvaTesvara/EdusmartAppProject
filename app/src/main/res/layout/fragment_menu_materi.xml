@@ -5,38 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentMenuMateri"
+    android:background="@android:color/white"
     android:id="@+id/FragmentMenuMateri">
 
     <!-- TODO: Update blank fragment layout -->
 
+
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/imageView5"
+        android:layout_width="207dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-50dp"
+        android:layout_gravity="right
+"
+        android:src="@drawable/lamp" />
+
+    <ImageView
+        android:layout_width="207dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="450dp"
+        android:src="@drawable/lamp_flipped"
+        android:layout_marginStart="-50dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:src="@drawable/vectoredusmartok"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_gravity="right"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/baseline_notifications_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_gravity="right"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/profilepic"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/Judul"
-        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="70dp"
-        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="79dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/just_another_hand"
         android:text="Materi"
-        android:textColor="#104E62"
-        android:textSize="25dp"
-        android:textStyle="bold"/>
+        android:textColor="@color/orange_wortel_edusmart"
+        android:textSize="64sp"/>
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp"
-        android:layout_marginTop="120dp"
-        android:padding="10dp">
+        android:layout_height="450dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="bottom">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,20 +90,20 @@
 
             <!--Hari senin-->
             <androidx.cardview.widget.CardView
-                android:layout_width="370dp"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                app:contentPadding="15dp"
                 android:layout_height="180dp"
                 android:layout_marginBottom="15dp"
-                app:cardBackgroundColor="#D1D0E2"
+                app:cardBackgroundColor="@color/orange_wortel_edusmart"
                 app:cardCornerRadius="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Senin"
-                    android:textColor="#104E62"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
@@ -67,227 +111,217 @@
                     android:id="@+id/seninindo"
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Fisika"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:id="@+id/senininggris"
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="B.Inggris"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Kimia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari selasa-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#D1D0E2"
-                app:cardCornerRadius="20dp"
-                android:layout_width="370dp"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                app:contentPadding="15dp"
                 android:layout_height="180dp"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/orange_wortel_edusmart"
+                app:cardCornerRadius="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Selasa"
-                    android:textColor="#104E62"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Matematika"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Fisika"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Biologi"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari Rabu-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#D1D0E2"
-                app:cardCornerRadius="20dp"
-                android:layout_width="370dp"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                app:contentPadding="15dp"
                 android:layout_height="180dp"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/orange_wortel_edusmart"
+                app:cardCornerRadius="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Rabu"
-                    android:textColor="#104E62"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="B.inggris"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Matematika"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Kimia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="B.indonesia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari kamis-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#D1D0E2"
-                app:cardCornerRadius="20dp"
-                android:layout_width="370dp"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                app:contentPadding="15dp"
                 android:layout_height="180dp"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/orange_wortel_edusmart"
+                app:cardCornerRadius="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Kamis"
-                    android:textColor="#104E62"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Biologi"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Fisika"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Kimia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
             </androidx.cardview.widget.CardView>
 
             <!--Hari Jumat-->
             <androidx.cardview.widget.CardView
-                app:cardBackgroundColor="#D1D0E2"
-                app:cardCornerRadius="20dp"
-                android:layout_width="370dp"
+                android:layout_width="320dp"
+                android:layout_gravity="center"
+                app:contentPadding="15dp"
                 android:layout_height="180dp"
-                android:layout_marginBottom="15dp">
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/orange_wortel_edusmart"
+                app:cardCornerRadius="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="5dp"
                     android:fontFamily="sans-serif-condensed"
                     android:text="Jumat"
-                    android:textColor="#104E62"
+                    android:textColor="@color/white"
                     android:textSize="25dp"
                     android:textStyle="bold" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="B.Indonesia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="right"
                     android:layout_marginTop="40dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="B.Inggris"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
 
                 <Button
                     android:layout_width="140dp"
                     android:layout_height="40dp"
-                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="80dp"
-                    android:backgroundTint="#53B2D0"
+                    android:backgroundTint="@color/white"
                     android:text="Kimia"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/orange_wortel_edusmart" />
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>

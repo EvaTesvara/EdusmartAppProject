@@ -32,6 +32,7 @@ class FragmentMenuMateri : Fragment() {
         buttonseninindo.setOnClickListener(View.OnClickListener {
             val fl:FrameLayout = view.findViewById(R.id.FragmentMenuMateri)
             fl.removeAllViews()
+
             val fragmentBabMateriIndo: Fragment = FragmentBabMateri()
             val fm: FragmentTransaction? =
                 getActivity()?.getSupportFragmentManager()?.beginTransaction()
@@ -46,6 +47,7 @@ class FragmentMenuMateri : Fragment() {
             val fragmentBabMateriInggris: Fragment = FragmentBabMateriInggris()
             val fm: FragmentTransaction? =
                 getActivity()?.getSupportFragmentManager()?.beginTransaction()
+            fm?.addToBackStack(null)
             fm?.replace(R.id.FragmentMenuMateri, fragmentBabMateriInggris)?.commit()
 
         })
