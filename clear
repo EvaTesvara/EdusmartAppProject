@@ -1,0 +1,23 @@
+[33mcommit cac22042abeff80ef67100d220df35ec34b10afe[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Eva Tesvara <eva.tesvara@gmail.com>
+Date:   Wed Oct 11 21:37:25 2023 +0700
+
+    menu bab interface added
+
+[33mcommit f1d97ba9d0c951a6da0b21fca3930c3ad7c9042c[m
+Author: Eva Tesvara <eva.tesvara@gmail.com>
+Date:   Wed Oct 11 19:52:51 2023 +0700
+
+    menu materi pertama added to nav bar binding
+
+[33mcommit 64266bce21157b8fbf3224cbfef3acd856eb198b[m
+Author: Eva Tesvara <eva.tesvara@gmail.com>
+Date:   Wed Oct 11 19:26:43 2023 +0700
+
+    bottom nav bar
+
+[33mcommit b50518f93f97f3d676dc9cb3974095ea065ae7b6[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Eva Tesvara <eva.tesvara@gmail.com>
+Date:   Wed Oct 11 02:30:54 2023 +0700
+
+    jadwal materi ScrollView done
