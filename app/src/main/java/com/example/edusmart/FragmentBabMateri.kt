@@ -11,6 +11,7 @@ import android.widget.FrameLayout
 import android.widget.ImageButton
 import androidx.appcompat.view.menu.MenuView.ItemView
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 
@@ -33,6 +34,9 @@ class FragmentBabMateri : Fragment() {
         val toFisikaBab1 = view.findViewById<CardView>(R.id.fisikaBab1)
 
         toFisikaBab1.setOnClickListener(View.OnClickListener {
+
+            val fl:ConstraintLayout = view.findViewById(R.id.FragmentBabMateri)
+            fl.removeAllViews()
 
             val fragmentfisikabab1 : Fragment = TopikMateriFisika()
             val fmn: FragmentTransaction? =

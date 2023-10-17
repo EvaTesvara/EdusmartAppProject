@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.ImageButton
 import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
@@ -44,6 +45,9 @@ class TopikMateriFisika : Fragment() {
         val btnToMateri = view.findViewById<CardView>(R.id.cardViewMateri)
 
         btnToMateri.setOnClickListener(View.OnClickListener {
+
+            val fl: ConstraintLayout = view.findViewById(R.id.TopikMateriFisika)
+            fl.removeAllViews()
 
             val fragmentMateriFisika: Fragment = MateriFisika()
             val fmn: FragmentTransaction? = getActivity()?.getSupportFragmentManager()?.beginTransaction()
