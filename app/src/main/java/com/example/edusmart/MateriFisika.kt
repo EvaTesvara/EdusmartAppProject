@@ -5,10 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.FrameLayout
-import android.widget.ImageButton
-import androidx.cardview.widget.CardView
-import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -17,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [TopikMateriFisika.newInstance] factory method to
+ * Use the [MateriFisika.newInstance] factory method to
  * create an instance of this fragment.
  */
-class TopikMateriFisika : Fragment() {
+class MateriFisika : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,29 +34,7 @@ class TopikMateriFisika : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view:View = inflater.inflate(R.layout.fragment_topik_materi_fisika, container, false)
-
-        val backButton = view.findViewById<ImageButton>(R.id.btn_back)
-        val btnToMateri = view.findViewById<CardView>(R.id.cardViewMateri)
-
-        btnToMateri.setOnClickListener(View.OnClickListener {
-
-            val fragmentMateriFisika: Fragment = MateriFisika()
-            val fmn: FragmentTransaction? = getActivity()?.getSupportFragmentManager()?.beginTransaction()
-            fmn?.replace(R.id.TopikMateriFisika, fragmentMateriFisika)?.commit()
-        })
-
-        backButton.setOnClickListener(View.OnClickListener {
-            val fragmentBabMateri: Fragment = FragmentBabMateri()
-            val fmn: FragmentTransaction? =
-                getActivity()?.getSupportFragmentManager()?.beginTransaction()
-            fmn?.replace(R.id.FragmentBabMateri, fragmentBabMateri)?.commit()
-            fmn?.addToBackStack(null)
-
-
-        })
-
-        return view
+        return inflater.inflate(R.layout.fragment_materi_fisika, container, false)
     }
 
     companion object {
@@ -70,12 +44,12 @@ class TopikMateriFisika : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment TopikMateriFisika.
+         * @return A new instance of fragment MateriFisika.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            TopikMateriFisika().apply {
+            MateriFisika().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
