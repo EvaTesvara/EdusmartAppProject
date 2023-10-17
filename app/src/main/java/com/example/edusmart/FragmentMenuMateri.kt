@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
+import androidx.fragment.app.FragmentContainer
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.findFragment
 import androidx.navigation.Navigation
@@ -32,11 +33,10 @@ class FragmentMenuMateri : Fragment() {
         buttonseninindo.setOnClickListener(View.OnClickListener {
             val fl:FrameLayout = view.findViewById(R.id.FragmentMenuMateri)
             fl.removeAllViews()
-
             val fragmentBabMateriIndo: Fragment = FragmentBabMateri()
             val fm: FragmentTransaction? =
                 getActivity()?.getSupportFragmentManager()?.beginTransaction()
-            fm?.replace(R.id.FragmentMenuMateri, fragmentBabMateriIndo)?.commit()
+            fm?.replace(R.id.FragmentMenuMateri,fragmentBabMateriIndo)?.commit()
 
         })
 

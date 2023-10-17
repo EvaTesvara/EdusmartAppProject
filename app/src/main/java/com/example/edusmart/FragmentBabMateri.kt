@@ -30,7 +30,16 @@ class FragmentBabMateri : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_bab_materi, container, false)
 
         val buttonKembali = view.findViewById<ImageButton>(R.id.btn_back)
+        val toFisikaBab1 = view.findViewById<CardView>(R.id.fisikaBab1)
 
+        toFisikaBab1.setOnClickListener(View.OnClickListener {
+
+            val fragmentfisikabab1 : Fragment = TopikMateriFisika()
+            val fmn: FragmentTransaction? =
+                getActivity()?.getSupportFragmentManager()?.beginTransaction()
+            fmn?.replace(R.id.FragmentBabMateri, fragmentfisikabab1)?.commit()
+            fmn?.addToBackStack(null)
+        })
 
         buttonKembali.setOnClickListener(View.OnClickListener {
             val fragmentMenuMateri: Fragment = FragmentMenuMateri()

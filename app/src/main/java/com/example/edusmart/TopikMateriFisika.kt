@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +36,21 @@ class TopikMateriFisika : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_topik_materi_fisika, container, false)
+        val view:View = inflater.inflate(R.layout.fragment_topik_materi_fisika, container, false)
+
+        val backButton = view.findViewById<ImageButton>(R.id.btn_back)
+
+        backButton.setOnClickListener(View.OnClickListener {
+            val fragmentBabMateri: Fragment = FragmentBabMateri()
+            val fmn: FragmentTransaction? =
+                getActivity()?.getSupportFragmentManager()?.beginTransaction()
+            fmn?.replace(R.id.FragmentBabMateri, fragmentBabMateri)?.commit()
+            fmn?.addToBackStack(null)
+
+
+        })
+
+        return view
     }
 
     companion object {
