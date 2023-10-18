@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -13,10 +16,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [FragmentTugas.newInstance] factory method to
+ * Use the [FragmentIsiTugasFisika.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FragmentTugas : Fragment() {
+class FragmentIsiTugasFisika : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +37,22 @@ class FragmentTugas : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tugas, container, false)
+        val view:View =  inflater.inflate(R.layout.fragment_isi_tugas_fisika, container, false)
+
+        val buttonkembali = view.findViewById<ImageButton>(R.id.btn_back)
+
+        buttonkembali.setOnClickListener(View.OnClickListener {
+
+            val rl:ConstraintLayout = view.findViewById(R.id.FragmentIsiTugasFisika)
+            rl.removeAllViews()
+
+            val toIsiBabFisika: Fragment = FragmentIsiBabFisika()
+            val fragmentChange: FragmentTransaction? = getActivity()?.getSupportFragmentManager()?.beginTransaction()
+            fragmentChange?.replace(R.id.FragmentIsiTugasFisika, toIsiBabFisika)?.commit()
+
+        })
+
+        return view
     }
 
     companion object {
@@ -44,12 +62,12 @@ class FragmentTugas : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment FragmentTugas.
+         * @return A new instance of fragment FragmentIsiTugasFisika.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            FragmentTugas().apply {
+            FragmentIsiTugasFisika().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

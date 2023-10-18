@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FragmentBabMateriInggris"
-    android:id="@+id/FragmentBabMateriInggris">
+    tools:context=".FragmentDaftarBabFisika"
+    android:id="@+id/FragmentBabMateri">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -38,8 +38,7 @@
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:src="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/baseline_arrow_back_24"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
@@ -73,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
         android:fontFamily="@font/just_another_hand"
-        android:text="B. Inggris"
+        android:text="Fisika"
         android:textColor="@color/orange_wortel_edusmart"
         android:textSize="64sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,15 +85,13 @@
         android:layout_height="450dp"
         android:layout_marginStart="17dp"
         android:layout_marginEnd="17dp"
-        android:layout_marginTop="25dp"
         android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        >
+       >
 
-
-    <LinearLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -129,9 +126,10 @@
 
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/fisikaBab1"
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -145,7 +143,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Introduction"
+                            android:text="Hukum Newton"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -156,13 +154,11 @@
             </LinearLayout>
 
 
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView7"
@@ -190,8 +186,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -205,7 +201,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Activity in School"
+                            android:text="Tekanan"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -217,12 +213,11 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView9"
@@ -250,8 +245,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -265,7 +260,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Travelling"
+                            android:text="Gravitasi"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -278,8 +273,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView10"
@@ -307,8 +302,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -322,7 +317,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Family and Friends"
+                            android:text="Katrol"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -335,8 +330,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView11"
@@ -364,8 +359,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -379,7 +374,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Weather"
+                            android:text="Gaya"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -392,8 +387,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView12"
@@ -421,8 +416,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -436,7 +431,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Nature"
+                            android:text="Suhu"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 
@@ -449,8 +444,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#221C1C"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#221C1C">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView13"
@@ -478,8 +473,8 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="235dp"
-                    android:layout_marginStart="10dp"
                     android:layout_height="76dp"
+                    android:layout_marginStart="10dp"
                     android:backgroundTint="@color/orange_wortel_edusmart"
                     app:cardCornerRadius="10dp">
 
@@ -493,7 +488,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/just_another_hand"
-                            android:text="Outdoor activities"
+                            android:text="Perubahan zat"
                             android:textColor="@color/white"
                             android:textSize="36sp" />
 

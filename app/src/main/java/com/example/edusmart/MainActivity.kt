@@ -18,10 +18,9 @@ class MainActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.home -> replaceFragment(FragmentHome())
-                R.id.materi -> replaceFragment(FragmentMenuMateri())
+                R.id.materi -> replaceFragment(FragmentJadwalPelajaran())
                 R.id.chat -> replaceFragment(FragmentChat())
                 R.id.qr_code -> replaceFragment(FragmentQrCode())
-                R.id.tugas -> replaceFragment(FragmentTugas())
 
                 else ->{
 

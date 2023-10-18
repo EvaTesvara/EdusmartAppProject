@@ -7,13 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
-import androidx.fragment.app.FragmentContainer
 import androidx.fragment.app.FragmentTransaction
-import androidx.fragment.app.findFragment
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 
-class FragmentMenuMateri : Fragment() {
+class FragmentJadwalPelajaran : Fragment() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,16 +23,16 @@ class FragmentMenuMateri : Fragment() {
 
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_menu_materi, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_jadwal_pelajaran, container, false)
 
         val buttonseninindo = view.findViewById<Button>(R.id.seninindo)
         buttonseninindo.setOnClickListener(View.OnClickListener {
             val fl:FrameLayout = view.findViewById(R.id.FragmentMenuMateri)
             fl.removeAllViews()
-            val fragmentBabMateriIndo: Fragment = FragmentBabMateri()
+            val fragmentDaftarBabFisikaIndo: Fragment = FragmentDaftarBabFisika()
             val fm: FragmentTransaction? =
                 getActivity()?.getSupportFragmentManager()?.beginTransaction()
-            fm?.replace(R.id.FragmentMenuMateri,fragmentBabMateriIndo)?.commit()
+            fm?.replace(R.id.FragmentMenuMateri,fragmentDaftarBabFisikaIndo)?.commit()
 
         })
 
@@ -44,11 +40,11 @@ class FragmentMenuMateri : Fragment() {
         buttonsenininggris.setOnClickListener(View.OnClickListener {
             val fl:FrameLayout = view.findViewById(R.id.FragmentMenuMateri)
             fl.removeAllViews()
-            val fragmentBabMateriInggris: Fragment = FragmentBabMateriInggris()
+            val fragmentDaftarBabInggris: Fragment = FragmentDaftarBabInggris()
             val fm: FragmentTransaction? =
                 getActivity()?.getSupportFragmentManager()?.beginTransaction()
             fm?.addToBackStack(null)
-            fm?.replace(R.id.FragmentMenuMateri, fragmentBabMateriInggris)?.commit()
+            fm?.replace(R.id.FragmentMenuMateri, fragmentDaftarBabInggris)?.commit()
 
         })
 
